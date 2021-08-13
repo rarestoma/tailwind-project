@@ -12,7 +12,11 @@ module.exports = {
       colors: {
         'blue': colors.blue,
       },
+      fontFamily: {
+       body: ['Nunito'],
+      }
     },
+
   },
   variants: {
     extend: {},

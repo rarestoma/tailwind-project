@@ -11,7 +11,7 @@
   "main": "index.html",
   "scripts": {
     "start": "browser-sync start --server --index \"./public/index.html\"",
-    "build:tailwind": "tailwind build assets/styles/index.css -o assets/styles/tailwind.css",
+    "build:tailwind": "tailwind build ./src/styles.css -o assets/styles/tailwind.css",
     "build:fontawesome": "mkdir -p assets/vendor/@fortawesome/fontawesome-free/webfonts && mkdir -p assets/vendor/@fortawesome/fontawesome-free/css && cp -a ./node_modules/@fortawesome/fontawesome-free/webfonts assets/vendor/@fortawesome/fontawesome-free/ && cp ./node_modules/@fortawesome/fontawesome-free/css/all.min.css assets/vendor/@fortawesome/fontawesome-free/css/all.min.css",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm run build:fontawesome && npm start"
   },
